@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Librerias de FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <!--Libreria Bootstap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/estilos.css">
+    <title>Chat Unidad 5 y 6</title>
+</head>
+<body style="background-color:#58758f;">
+    <h1 style="color: rgb(102, 73, 10); text-align: center;">Proyecto de Chat con Realtime Database</h1> 
+    <div class="container">
+        <form>
+            <div class="container">
+                <div class= "msg-header">
+                    <div class="msg-header-img">
+                        <img src="user1.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="btn btn-info">
+                <label for="usuario">Usuario: </label>
+                <input type="text" id="usuario" value=""/>
+            </div>
+            </div>         
+            <div class="container">
+                <div class= "dm-header">
+                    <div class="dm-header-img">
+                        <img src="msje.jpg">
+                    </div>
+                </div>
+            </div>
+                <div class="btn btn-info"><label for="mensaje">Mensaje: </label>
+                <input type="text" id="mensaje" value=""/>
+            </div>
+            </div>
+            <div class="container">
+            <div class="btn btn-primary">
+            <button class="btn-warning" type="button" id="btnenviar">Enviar</button>
+        </div>
+    </div>
+       <div> 
+        <div class="container">
+        </form>
+        <br/>
+            <ol id="chatlista">
+            
+            </ol>
+        </div>
+    </div>
+    <script src="app.js"></script>  
+</body>
+</html>
